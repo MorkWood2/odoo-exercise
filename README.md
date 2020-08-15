@@ -3,13 +3,17 @@
 
 **Thank you for giving me this oppritunity to work for Odoo, this was a fun and tricky exercise**
 
+
+
+
 *** Odoo question exercise*** 
 
 > What do you find good/bad about this screen ?
 
 I think it looks a little flat, adding subtle box-shadows,  bigger and more readable text, working in accordance with Google's Material Design style guide certainly wouldn't hurt and a concerted changed in color harmony. 
 
-Functionally I think it's a great design. 
+Functionally it looks like a great design. 
+
 
 
 > What would you improve on it ?
