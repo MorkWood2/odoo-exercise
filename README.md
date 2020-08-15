@@ -4,9 +4,14 @@
 **Thank you for giving me this oppritunity to work for Odoo, this was a fun and tricky exercise**
 
 
+**My experience**
+
+It certainly was tricky, espectially the overlaping boxes on the grid. I did not have enough time to fill out the design complelety (coloring and adding more numberous event boxes with unique styling) and the way I engineered the grid lead to complications with the toggle functionality.If I had more time I would refactor the code to keep it 'dry' and simply.  
 
 
-*** Odoo question exercise*** 
+
+
+***Odoo question exercise*** 
 
 > What do you find good/bad about this screen ?
 
@@ -26,9 +31,6 @@ Add some depth as well as increase the text size. Simplify color tags on event b
 I would use a library like React and Sass. 
 Super helpful dependencies that would make the functionality easier to implement.
 
-** My experience **
-
-It certainly was tricky, espectially the overlaping boxes on the grid. I did not have enough time to fill out the design complelety (coloring and adding more numberous event boxes with unique styling) and the way I engineered the grid lead to complications with the toggle functionality.  
 
 
 **Things I would refactor if I was given more time**
