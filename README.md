@@ -11,6 +11,7 @@ It certainly was tricky, especially the overlapping boxes on the grid. I did not
 
 
 **Things I would refactor if I was given more time**
+
 -spend more time engineering how I would implement a solution through research and prototyping. 
 - simplify simplify simplify js variables
 - wrap grids in seperate containers to apply style across broad elements instead of verbose naming conventions
