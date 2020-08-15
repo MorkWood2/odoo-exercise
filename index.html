@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odoo Exercise solution</title>
+  </head>
+  <body>
+    <div class="body-container">
+      <!-- bootstrap nav -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div
+          class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"
+        >
+          <ul class="navbar-nav mr-auto">
+            <a class="navbar-brand" href="#">
+              <img
+                src="assets/bootstrap-solid.svg"
+                width="30"
+                height="30"
+                alt=""
+              />
+            </a>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"><h4>dd</h4></a>
+            </li>
+
+            <li class="nav-item ml-5">
+              <a class="nav-link" href="#">trez</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-clock"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"
+                  /></svg
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-back"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"
+                  /></svg
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-bug"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A4.979 4.979 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A4.985 4.985 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623zM4 7v4a4 4 0 0 0 3.5 3.97V7H4zm4.5 0v7.97A4 4 0 0 0 12 11V7H8.5zM12 6H4a3.99 3.99 0 0 1 1.333-2.982A3.983 3.983 0 0 1 8 2c1.025 0 1.959.385 2.666 1.018A3.989 3.989 0 0 1 12 6z"
+                  /></svg
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-tools"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 1l1-1 3.081 2.2a1 1 0 0 1 .419.815v.07a1 1 0 0 0 .293.708L10.5 9.5l.914-.305a1 1 0 0 1 1.023.242l3.356 3.356a1 1 0 0 1 0 1.414l-1.586 1.586a1 1 0 0 1-1.414 0l-3.356-3.356a1 1 0 0 1-.242-1.023L9.5 10.5 3.793 4.793a1 1 0 0 0-.707-.293h-.071a1 1 0 0 1-.814-.419L0 1zm11.354 9.646a.5.5 0 0 0-.708.708l3 3a.5.5 0 0 0 .708-.708l-3-3z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M15.898 2.223a3.003 3.003 0 0 1-3.679 3.674L5.878 12.15a3 3 0 1 1-2.027-2.027l6.252-6.341A3 3 0 0 1 13.778.1l-2.142 2.142L12 4l1.757.364 2.141-2.141zm-13.37 9.019L3.001 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"
+                  /></svg
+              ></a>
+            </li>
+            <li class="nav-item pl-3">
+              <div class="dropdown show">
+                <a
+                  class="btn border-0 dropdown-toggle text-white"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="/assets/imansyah-muhamad-putera-n4KewLKFOZw-unsplash.jpg"
+                    alt="..."
+                    class="rounded-circle"
+                    style="height: 20px; width: 20px; margin-right: 5px;"
+                  />
+                  Michell Admin (gantt)
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- search nav -->
+      <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <div
+          class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><h6>trez</h6></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <form class="form-inline border-bottom">
+                <input
+                  style="width: 500px;"
+                  class="form-control form-control-sm border-0"
+                  type="text"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-search"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                  />
+                </svg>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- options nav -->
+      <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <div
+          class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"
+        >
+          <ul class="navbar-nav mr-auto">
+            <a class="navbar-brand mr-4" href="#">
+              <button type="button" class="btn btn-info btn-sm rounded-0">
+                ADD
+              </button>
+            </a>
+            <a class="navbar-brand mr-0" href="#">
+              <button type="button" class="btn btn-info btn-sm rounded-0">
+                <svg
+                  width="1.2em"
+                  height="1.2em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-arrow-left"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </button>
+            </a>
+            <a class="navbar-brand mr-1 ml-1" href="#">
+              <button type="button" class="btn btn-info btn-sm rounded-0">
+                TODAY
+              </button>
+            </a>
+            <a class="navbar-brand" href="#">
+              <button type="button" class="btn btn-info btn-sm rounded-0">
+                <svg
+                  width="1.2em"
+                  height="1.2em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-arrow-right"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"
+                  />
+                </svg>
+              </button>
+            </a>
+            <a class="navbar-brand mr-1 ml-1" href="#">
+              <button type="button" class="btn btn-secondary btn-sm rounded-0">
+                MONTH
+              </button>
+            </a>
+            <a class="navbar-brand mr-1 ml-1" href="#">
+              <button type="button" class="btn btn-white btn-sm text-info">
+                WEEK
+              </button>
+            </a>
+            <a class="navbar-brand mr-1 ml-1" href="#">
+              <svg
+                width=".7em"
+                height=".7em"
+                viewBox="0 0 16 16"
+                class="bi bi-arrows-angle-expand text-info"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.5 10.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M6.354 9.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm8.5-8.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M10.036 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 1 1-1 0V2h-3.5a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+            </a>
+            <a class="navbar-brand mr-1 ml-1" href="#">
+              <svg
+                width=".7em"
+                height=".7em"
+                viewBox="0 0 16 16"
+                class="bi bi-arrows-angle-contract text-info"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.5 2.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M14.354 1.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 1 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm-7.5 7.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M2.036 9.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V10h-3.5a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+            </a>
+          </ul>
+        </div>
+
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav">
+            <div class="btn-group">
+              <button
+                class="btn btn-white btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-funnel-fill"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z"
+                  />
+                </svg>
+                Filters
+              </button>
+              <div class="dropdown-menu">
+                ...
+              </div>
+            </div>
+            <div class="btn-group">
+              <button
+                class="btn btn-white btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-list-stars"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"
+                  />
+                  <path
+                    d="M2.242 2.194a.27.27 0 0 1 .516 0l.162.53c.035.115.14.194.258.194h.551c.259 0 .37.333.164.493l-.468.363a.277.277 0 0 0-.094.3l.173.569c.078.256-.213.462-.423.3l-.417-.324a.267.267 0 0 0-.328 0l-.417.323c-.21.163-.5-.043-.423-.299l.173-.57a.277.277 0 0 0-.094-.299l-.468-.363c-.206-.16-.095-.493.164-.493h.55a.271.271 0 0 0 .259-.194l.162-.53zm0 4a.27.27 0 0 1 .516 0l.162.53c.035.115.14.194.258.194h.551c.259 0 .37.333.164.493l-.468.363a.277.277 0 0 0-.094.3l.173.569c.078.255-.213.462-.423.3l-.417-.324a.267.267 0 0 0-.328 0l-.417.323c-.21.163-.5-.043-.423-.299l.173-.57a.277.277 0 0 0-.094-.299l-.468-.363c-.206-.16-.095-.493.164-.493h.55a.271.271 0 0 0 .259-.194l.162-.53zm0 4a.27.27 0 0 1 .516 0l.162.53c.035.115.14.194.258.194h.551c.259 0 .37.333.164.493l-.468.363a.277.277 0 0 0-.094.3l.173.569c.078.255-.213.462-.423.3l-.417-.324a.267.267 0 0 0-.328 0l-.417.323c-.21.163-.5-.043-.423-.299l.173-.57a.277.277 0 0 0-.094-.299l-.468-.363c-.206-.16-.095-.493.164-.493h.55a.271.271 0 0 0 .259-.194l.162-.53z"
+                  />
+                </svg>
+                Group By
+              </button>
+              <div class="dropdown-menu">
+                ...
+              </div>
+            </div>
+
+            <div class="btn-group">
+              <button
+                class="btn btn-white btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-star"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                  />
+                </svg>
+                Favorites
+              </button>
+              <div class="dropdown-menu">
+                ...
+              </div>
+            </div>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <button type="button" class="btn btn-secondary btn-sm rounded-0">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-hdd-rack-fill"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2H2zm.5 3a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2 0a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm.5 3a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2 0a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zM3 9V7h1v2H3zm9 0V7h1v2h-1z"
+                />
+              </svg>
+            </button>
+            <button type="button" class="btn btn-white btn-sm">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-list"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+            </button>
+            <button type="button" class="btn btn-ligth btn-sm">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-app"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11 2H5a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"
+                />
+              </svg>
+            </button>
+          </ul>
+        </div>
+      </nav>
+      <!-- CSS Grid begin -->
+      <div class="ledger-container">
+        <div class="item title-row center">default gantt</div>
+        <div class="item date-row center">Febuary 2019</div>
+        <div class="item numbers center">01</div>
+        <div class="item numbers center">02</div>
+        <div class="item numbers center">03</div>
+        <div class="item numbers center">04</div>
+        <div class="item numbers center">05</div>
+        <div class="item numbers center">06</div>
+        <div class="item numbers center">07</div>
+        <div class="item numbers center">08</div>
+        <div class="item numbers center">09</div>
+        <div class="item numbers center">10</div>
+        <div class="item numbers center">11</div>
+        <div class="item numbers center">12</div>
+        <div class="item numbers center">13</div>
+        <div class="item numbers center">14</div>
+        <div class="item numbers center">15</div>
+        <div class="item numbers center">16</div>
+        <div class="item numbers center">17</div>
+        <div class="item numbers center">18</div>
+        <div class="item numbers center">19</div>
+        <div class="item numbers center">20</div>
+        <div class="item numbers center">21</div>
+        <div class="item numbers center">22</div>
+        <div class="item numbers center">23</div>
+        <div class="item numbers center">24</div>
+        <div class="item numbers center">25</div>
+        <div class="item numbers center">26</div>
+        <div class="item numbers center">27</div>
+        <div class="item numbers center">28</div>
+
+        <div class="item primary-title center" id="btn">
+          <a href=""> + Primary</a>
+        </div>
+        <div class="item numbers"></div>
+        <div class="item numbers box1 center">
+          <div class="center">1</div>
+        </div>
+        <div class="item numbers box2 center">
+          <div class="center">2</div>
+        </div>
+        <div class="item numbers box3">
+          <div class="center">1</div>
+        </div>
+        <div class="item numbers box4">
+          <div>
+            1
+          </div>
+        </div>
+        <div class="item numbers"></div>
+        <div class="item numbers"></div>
+        <div class="item numbers"></div>
+        <div class="item numbers"></div>
+        <div class="item numbers center">
+          <div class="two-half-box">
+            <div class="half-box center">1</div>
+            <div class="half-box center">2</div>
+          </div>
+        </div>
+        <div class="item numbers align-items">
+          <div class="left-box">
+            <div class="center">3</div>
+          </div>
+          <div class="half-whole">4</div>
+        </div>
+        <div class="item numbers"></div>
+        <div class="item numbers center">
+          <div class="two-half-box">
+            <div class="half-box center">1</div>
+            <div class="half-box center">2</div>
+          </div>
+        </div>
+        <div class="item numbers center">
+          <div class="two-half-box">
+            <div class="half-box center">1</div>
+            <div class="half-box center">2</div>
+          </div>
+        </div>
+        <div class="item numbers center">
+          <div class="two-half-box">
+            <div class="half-box center">1</div>
+            <div class="half-box center">2</div>
+          </div>
+        </div>
+        <div class="item numbers align-items">
+          <div class="five-half">
+            <div>4</div>
+          </div>
+        </div>
+        <div class="item numbers"></div>
+        <div class="item numbers"></div>
+        <div class="item numbers"></div>
+        <div class="item numbers"></div>
+        <div class="item numbers align-items">
+          <div class="half-whole">4</div>
+        </div>
+        <div class="item numbers"></div>
+        <div class="item numbers align-items">
+          <div class="whole-half">4</div>
+        </div>
+
+        <div class="item numbers box1">
+          <div class="center">1</div>
+        </div>
+
+        <div class="item numbers"></div>
+        <div class="item numbers"></div>
+        <div class="item numbers"></div>
+        <div class="item numbers"></div>
+
+        <!-- toggle Grid section -->
+        <!-- row 1 -->
+
+        <div class="primary-title-2 item2">Primary</div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers align-items">
+          <div class="five-half item2">
+            <div class="item2"><a href="" class="toggle-div-button">4</a></div>
+            <div class="hidden display">
+              <a href="" class="toggle-div-button">exit</a>
+              <div class="toggle-button-wrapper">
+                <button>plan existing</button>
+                <button>create</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <!-- row 2 -->
+        <div class="primary-title-3 item2">Primary</div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers align-items">
+          <div class="five-half item2">
+            <div class="item2"><a href="" class="toggle-div-button2">4</a></div>
+            <div class="hidden display2">
+              <a href="" class="toggle-div-button2">exit</a>
+              <div class="toggle-button-wrapper">
+                <button>plan existing</button>
+                <button>create</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <!-- row 3 -->
+        <div class="primary-title-4 item2">Primary</div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers align-items">
+          <div class="item2 five-half">
+            <div class="item2"><a href="" class="toggle-div-button3">4</a></div>
+            <div class="hidden display3">
+              <a href="" class="toggle-div-button3">exit</a>
+              <div class="toggle-button-wrapper">
+                <button>plan existing</button>
+                <button>create</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <!-- row 4 -->
+        <div class="primary-title-5 item2">Primary</div>
+        <div class="item2 numbers align-items">
+          <div class="item2 five-half">
+            <div class="item2"><a href="" class="toggle-div-button4">4</a></div>
+            <div class="hidden display4">
+              <a href="" class="toggle-div-button4">exit</a>
+              <div class="toggle-button-wrapper">
+                <button>plan existing</button>
+                <button>create</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <!-- row 5 -->
+        <div class="primary-title-6 item2">Primary</div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+        <div class="item2 numbers"></div>
+      </div>
+      <div class="footer"></div>
+      <!-- Toggle function -->
+      <!-- Hover function -->
+      <script>
+        let button = document.getElementById('btn');
+        let element = document.querySelectorAll('.item2');
+        button.addEventListener('click', (e) => {
+          for (var i = 0; i < element.length; i++) {
+            e.preventDefault();
+            element[i].classList.toggle('hidden');
+          }
+        });
+
+        let buttonDiv = document.querySelector('.toggle-div-button');
+        let display1 = document.querySelector('.display');
+        buttonDiv.addEventListener('click', (e) => {
+          e.preventDefault();
+          display1.classList.toggle('hidden');
+        });
+        let buttonDiv2 = document.querySelector('.toggle-div-button2');
+        let display2 = document.querySelector('.display2');
+        buttonDiv2.addEventListener('click', (e) => {
+          e.preventDefault();
+          display2.classList.toggle('hidden');
+        });
+        let buttonDiv3 = document.querySelector('.toggle-div-button3');
+        let display3 = document.querySelector('.display3');
+        buttonDiv3.addEventListener('click', (e) => {
+          e.preventDefault();
+          display3.classList.toggle('hidden');
+        });
+        let buttonDiv4 = document.querySelector('.toggle-div-button4');
+        let display4 = document.querySelector('.display4');
+        buttonDiv4.addEventListener('click', (e) => {
+          e.preventDefault();
+          display4.classList.toggle('hidden');
+        });
+      </script>
+    </div>
+  </body>
+</html>
+<!-- let hoverElement = document.querySelectorAll('.hover-toggle');
+  hoverElement.addEventListener('mouseover', (e) => {
+   for(var i = 0; i < hoverElement.length; i++) {
+    hoverElement[i].mouseover == true ? 
+   }
+  }); -->
+<!-- let hoverElement = document.querySelectorAll('.hover-toggle');
+  hoverElement.addEventListener('mouseover', (e) => {
+    hoverElement.classList.toggle('hidden-hover');
+  }); -->
+<!--  element.classList.toggle('hidden');; -->
+<!-- element[i].classList.toggle('hidden') &&
+element[i].classList.remove('align-items'); -->

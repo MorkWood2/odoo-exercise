@@ -1,0 +1,240 @@
+:root {
+  --main-height: 71%;
+  --gray-entry-background: #d1d1d1;
+  --text-color: #ffffff;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(212, 212, 212);
+  margin: 0;
+  padding: 0;
+}
+.body-container {
+  min-width: 1080px;
+}
+
+.hidden {
+  display: none;
+}
+
+.search-input {
+  border-right: 0;
+}
+
+.search-icon {
+  border-left: 0 solid transparent;
+  background: transparent;
+}
+
+.ledger-container {
+  background: #f3f4f6;
+  height: 70px;
+  display: grid;
+  grid-template-columns: repeat(32, auto);
+  grid-template-rows: 35px 35px 35px 35px 35px 35px 35px 35px 35px;
+}
+
+.item {
+  border-bottom: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+}
+.item2 {
+  border-right: 1px solid gainsboro;
+}
+
+.title-row {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-row {
+  grid-column-start: 5;
+  grid-column-end: 33;
+}
+
+.primary-title {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.primary-title-2 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  border-right: 1px solid gainsboro;
+  color: var(--text-color);
+}
+.primary-title-3 {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  border-right: 1px solid gainsboro;
+  color: var(--text-color);
+}
+.primary-title-4 {
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  border-right: 1px solid gainsboro;
+  color: var(--text-color);
+}
+.primary-title-5 {
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  border-right: 1px solid gainsboro;
+  color: var(--text-color);
+}
+.primary-title-6 {
+  grid-row-start: 8;
+  grid-row-end: 9;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  border-right: 1px solid gainsboro;
+  color: var(--text-color);
+}
+.box1 {
+  /* border: black 1px solid; */
+  /* width: 50%; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.box1 > div {
+  width: 50%;
+  height: var(--main-height);
+  background: var(--gray-entry-background);
+  color: var(--text-color);
+}
+
+/* .box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.box2 > div {
+  width: 100%;
+  height: var(--main-height);
+  background: var(--gray-entry-background);
+  color: var(--text-color);
+}
+
+.box3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box3 > div {
+  width: 50%;
+  height: var(--main-height);
+  background: var(--gray-entry-background);
+  color: var(--text-color);
+}
+
+.box4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box4 > div {
+  width: 6%;
+
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  background: var(--gray-entry-background);
+  color: var(--text-color);
+}
+
+.two-half-box {
+  display: flex;
+  flex-direction: row;
+  height: var(--main-height);
+  width: 100%;
+}
+.half-box {
+  width: 50%;
+  background: var(--gray-entry-background);
+  color: var(--text-color);
+}
+
+.left-box {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  text-align: center;
+  height: var(--main-height);
+}
+.left-box > div {
+  width: 100%;
+  background: var(--gray-entry-background);
+  color: var(--text-color);
+}
+
+.align-items {
+  display: flex;
+  align-items: center;
+}
+
+.half-whole {
+  position: absolute;
+  margin: 0 0 0 15px;
+  background: var(--gray-entry-background);
+  color: var(--text-color);
+  width: 4%;
+
+  z-index: 1;
+  text-align: center;
+}
+
+.five-half {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.five-half > div {
+  position: absolute;
+  width: 16%;
+
+  z-index: 1;
+  text-align: center;
+  background: var(--gray-entry-background);
+  color: var(--text-color);
+}
+.whole-half {
+  position: absolute;
+
+  height: inherit;
+  background: var(--gray-entry-background);
+  color: var(--text-color);
+  width: 4.5%;
+
+  z-index: 1;
+  text-align: center;
+}
+
+.footer {
+  position: relative;
+  top: 205px;
+  width: 100%;
+  height: 400px;
+  background: #f0f0f0;
+}
