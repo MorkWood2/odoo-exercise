@@ -1,5 +1,21 @@
 # odoo-exercise
+
+
 **Thank you for giving me this oppritunity to work for Odoo, this was a fun and tricky exercise**
+
+*** Odoo question exercise*** 
+
+> What do you find good/bad about this screen ?
+
+
+
+> What would you improve on it ?
+
+
+
+> What would you change about it ?
+
+
 
 **Things I would refactor if I was given more time**
 - wrap grids in seperate containers to apply style across broad elements instead of verbose naming conventions
