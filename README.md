@@ -6,8 +6,8 @@
 
 **My experience**
 
-It certainly was tricky, especially the overlapping boxes on the grid. I did not have enough time to fill out the design completely (coloring and adding more numerous event boxes with unique styling) and the way I engineered the grid lead to complications with the toggle functionality.If I had more time I would refactor the code to keep it 'dry' and simply.
-Something I know is going to be so good that I don’t want it to be over and therefore don’t want it to begin. 
+It certainly was tricky, especially the overlapping boxes on the grid. I did not have enough time to fill out the design completely (coloring and adding more numerous event boxes with unique styling) and the way I engineered the grid lead to complications with the toggle functionality.If I had more time I would refactor the code completely to make it more 'dry' and simplify.
+
 
 
 **Things I would refactor if I was given more time**
